@@ -19,7 +19,9 @@
 
 import bottle
 import os
+import time
 
+from datetime import datetime
 from urllib.parse import urlencode
 
 from foris import fapi
@@ -184,6 +186,12 @@ class DataCollectPluginPage(ConfigPageMixin, DataCollectPluginConfigHandler):
     template = "data_collect/data_collect"
     template_type = "jinja2"
 
+    SENDING_STATUS_TRANSLATION = {
+        'online': gettext("Online"),
+        'offline': gettext("Offline"),
+        'unknown': gettext("Unknown status"),
+    }
+
     def save(self, *args, **kwargs):
         super().save(no_messages=True, *args, **kwargs)
         result = self.form.callback_results.get('result', False)
@@ -212,6 +220,21 @@ class DataCollectPluginPage(ConfigPageMixin, DataCollectPluginConfigHandler):
 
             if updater_data["enabled"]:
                 collect_data = current_state.backend.perform("data_collect", "get")
+                firewall_status = collect_data["firewall_status"]
+                firewall_status["seconds_ago"] = int(time.time() - firewall_status["last_check"])
+                firewall_status["datetime"] = datetime.fromtimestamp(firewall_status["last_check"])
+                firewall_status["state_trans"] = self.SENDING_STATUS_TRANSLATION[
+                    firewall_status["state"]]
+
+                ucollect_status = collect_data["ucollect_status"]
+                ucollect_status["seconds_ago"] = int(time.time() - ucollect_status["last_check"])
+                ucollect_status["datetime"] = datetime.fromtimestamp(ucollect_status["last_check"])
+                ucollect_status["state_trans"] = self.SENDING_STATUS_TRANSLATION[
+                    ucollect_status["state"]]
+
+                kwargs["ucollect_status"] = ucollect_status
+                kwargs["firewall_status"] = firewall_status
+
                 if collect_data["agreed"]:
                     handler = CollectionToggleHandler(bottle.request.POST.decode())
                     kwargs['collection_toggle_form'] = handler.form
@@ -314,6 +337,7 @@ class DataCollectPlugin(ForisPlugin):
     DIRNAME = os.path.dirname(os.path.abspath(__file__))
 
     PLUGIN_STYLES = [
+        "css/data_collect.css",
     ]
     PLUGIN_STATIC_SCRIPTS = [
     ]

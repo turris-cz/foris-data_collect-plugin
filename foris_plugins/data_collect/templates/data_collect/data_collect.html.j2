@@ -1,7 +1,7 @@
 {% extends 'config/base.html.j2' %}
 
 {% block config_base %}
-<div id="page-maintenance" class="config-page">
+<div id="page-data_collect" class="config-page">
   {% if foris_info.device_customization == "omnia" %}
     <p>
     {% trans %}With the Turris router you can join Project Turris which is a non-profit research project founded by the CZ.NIC association, a .CZ domain registry. By joining the project, your router will act as a probe which analyzes traffic between your home network and the Internet and helps to identify malicious data flows. Once such a flow is detected your router notifies the Turris headquarters which can compare the flow with data from the rest of the probes and assign it a threat level. If the flow is identified as an attack Turris headquarters can prepare an update which is distributed to every Turris router and helps them to protect themselves against the attack.{% endtrans %}
@@ -45,6 +45,47 @@
   {% endif %}
 
   {% if contract_valid() or (agreed is defined and agreed) %}
+    <h3>{% trans %}Data collection status{% endtrans %}</h3>
+    <table>
+      <tr>
+          <th>{% trans %}uCollect data{% endtrans %}:</th>
+          <td class="{{ "sending-ok" if ucollect_status['state'] == "online" else "sending-fail" }}">
+            <i class="{{ "fas fa-check" if ucollect_status['state'] == "online" else "fas fa-exclamation-circle" }}"></i>
+            {{ ucollect_status['state_trans'] }}
+            {% if ucollect_status['state'] != "unknown" %}
+            <abbr title="{% trans datetime=helpers.translate_datetime(ucollect_status['datetime']) %}Time of last update: {{ datetime }}{% endtrans %}">
+                  {% trans seconds=ucollect_status['seconds_ago'] %}
+                  status updated {{ seconds }} second ago
+                  {% pluralize %}
+                  status updated {{ seconds }} seconds ago
+                  {% endtrans %}
+                </abbr>
+            {% endif %}
+          </td>
+      </tr>
+      <tr>
+          <th>{% trans %}firewall logs{% endtrans %}:</th>
+          <td class="{{ "sending-ok" if firewall_status['state'] == "online" else "sending-fail" }}">
+            <i class="{{ "fas fa-check" if firewall_status['state'] == "online" else "fas fa-exclamation-circle" }}"></i>
+            {{ firewall_status['state_trans'] }}
+            {% if firewall_status['state'] != "unknown" %}
+                <abbr title="{% trans datetime=helpers.translate_datetime(firewall_status['datetime']) %}Time of last update: {{ datetime }}{% endtrans %}">
+                  {% trans seconds=firewall_status['seconds_ago'] %}
+                  status updated {{ seconds }} second ago
+                  {% pluralize %}
+                  status updated {{ seconds }} seconds ago
+                  {% endtrans %}
+                </abbr>
+            {% endif %}
+          </td>
+      </tr>
+      <tr>
+          <th></th>
+          <td class="reload">
+              <a href=""><i class="fas fa-sync"></i> {% trans %}Refresh{% endtrans %}</a>
+          </td>
+      </tr>
+    </table>
     <h2>{{ form.sections[0].title }}</h2>
 
     <form id="ucollect-form" class="config-form" action="{{ request.fullpath }}" method="post" autocomplete="off" novalidate>
