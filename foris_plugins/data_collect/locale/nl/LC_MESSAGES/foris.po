@@ -1,0 +1,198 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Foris package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  Foris\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-19 15:48+0200\n"
+"PO-Revision-Date: 2017-09-22 08:04+0000\n"
+"Last-Translator: Remy van Velthuijsen <remy@remysplace.de>\n"
+"Language: nl\n"
+"Language-Team: Dutch "
+"<https://hosted.weblate.org/projects/turris/foris/nl/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+msgid "Emulated services"
+msgstr "Geëmuleerde services"
+
+msgid ""
+"One of uCollect's features is emulation of some commonly abused services."
+" If this function is enabled, uCollect is listening for incoming "
+"connection attempts to these services. Enabling of the emulated services "
+"has no effect if another service is already listening on its default port"
+" (port numbers are listed below)."
+msgstr ""
+
+msgid "Telnet (23/TCP)"
+msgstr "Telnet (23/TCP)"
+
+msgid "Telnet - alternative port (2323/TCP)"
+msgstr "Telnet - alternatieve poort (2323/TCP)"
+
+msgid "HTTP (80/TCP)"
+msgstr "HTTP (80/TCP)"
+
+msgid "Squid HTTP proxy (3128/TCP)"
+msgstr "Squid HTTP-proxy (3128/TCP)"
+
+msgid "Polipo HTTP proxy (8123/TCP)"
+msgstr "Polipo HTTP-proxy (8123/TCP)"
+
+msgid "HTTP proxy (8080/TCP)"
+msgstr "HTTP-proxy (8080/TCP)"
+
+msgid "Collect credentials"
+msgstr "Login-informatie verzamelen"
+
+msgid ""
+"If this option is enabled, user names and passwords are collected and "
+"sent to server in addition to the IP address of the client."
+msgstr ""
+"Als deze optie in inschakelt zullen gebruikersnamen, wachtwoorden en IP-"
+"adressen verzameld worden en verzonden naar de server."
+
+msgid "Data collection"
+msgstr "Verzameling van gegevens"
+
+msgid "Enable data collection"
+msgstr "Het verzamelen van gegevens inschakelen"
+
+msgid "Email"
+msgstr "E-mail"
+
+#, fuzzy
+msgid "Failed to query the server."
+msgstr "Het goedkeuren van de update is mislukt."
+
+#, fuzzy
+msgid "Failed to verify the router's registration."
+msgstr "Kon de netwerkverbinding niet verifiëren."
+
+msgid "Online"
+msgstr "Online"
+
+msgid "Offline"
+msgstr "Offline"
+
+msgid "Unknown status"
+msgstr "Status onbekend"
+
+msgid "Configuration was successfully saved."
+msgstr "De instellingen zijn succesvol opgeslagen."
+
+msgid ""
+"Failed to update emulated services. Note that you might need to wait till"
+" ucollect is properly installed."
+msgstr ""
+
+msgid "There were some errors in your input."
+msgstr "Niet alle velden zijn correct ingevuld."
+
+#, fuzzy, python-format
+msgid "An error ocurred when checking the registration: <br><pre>%(error)s</pre>"
+msgstr ""
+"Er is een fout opgetreden bij het controleren van de registratie: "
+"<br><pre>%(error)s</pre>"
+
+msgid ""
+"Registration for the entered email is valid. Now you can enable the data "
+"collection."
+msgstr ""
+"Registratie voor het ingevoerde e-mailadres is geldig. Nu kunt u het "
+"verzamelen van gegevens inschakelen."
+
+#, python-format
+msgid ""
+"This router is currently assigned to a different email address. Please "
+"continue to the <a href=\"%(url)s\">Turris website</a> and use the "
+"registration code <strong>%(reg_num)s</strong> for a re-assignment to "
+"your email address."
+msgstr ""
+"Deze router is toegewezen aan een ander e-mailadres. Ga verder naar de <a"
+" href=\"%(url)s\">Turris website</a> en gebruik de registratiecode "
+"<strong>%(reg_num)s</strong> om de router opnieuw aan uw e-mailadres toe "
+"te wijzen."
+
+#, python-format
+msgid ""
+"This email address is not registered yet. Please continue to the <a "
+"href=\"%(url)s\">Turris website</a> and use the registration code "
+"<strong>%(reg_num)s</strong> to create a new account."
+msgstr ""
+"Dit e-mailadres is nog niet geregistreerd. Ga verder naar de <a "
+"href=\"%(url)s\">Turris website</a> en gebruik de registratiecode "
+"<strong>%(reg_num)s</strong> om een nieuw account te maken."
+
+msgid "Router failed to authorize. Please try to validate our email later."
+msgstr ""
+
+msgid "Wrong HTTP method."
+msgstr "Ongeldige HTTP-methode."
+
+msgid ""
+"With the Turris router you can join Project Turris which is a non-profit "
+"research project founded by the CZ.NIC association, a .CZ domain "
+"registry. By joining the project, your router will act as a probe which "
+"analyzes traffic between your home network and the Internet and helps to "
+"identify malicious data flows. Once such a flow is detected your router "
+"notifies the Turris headquarters which can compare the flow with data "
+"from the rest of the probes and assign it a threat level. If the flow is "
+"identified as an attack Turris headquarters can prepare an update which "
+"is distributed to every Turris router and helps them to protect "
+"themselves against the attack."
+msgstr ""
+
+msgid ""
+"The Updater is currently disabled. You must enable it first to enable "
+"data collection."
+msgstr "De updates is momenteel uitgeschakeld."
+
+msgid ""
+"If you want to join the Turris project you need to register on the Turris"
+" portal first. Enter the email address you want to register with or which"
+" you have used for this purpose before:"
+msgstr ""
+
+msgid "Validate email"
+msgstr "E-mailadres valideren"
+
+msgid "Save"
+msgstr "Opslaan"
+
+#, fuzzy
+msgid "Data collection status"
+msgstr "Verzameling van gegevens"
+
+#, fuzzy
+msgid "uCollect data"
+msgstr "uCollect"
+
+#, python-format
+msgid "Time of last update: %(datetime)s"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "status updated %(seconds)s second ago"
+msgid_plural "status updated %(seconds)s seconds ago"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "firewall logs"
+msgstr ""
+
+msgid "Refresh"
+msgstr "Verversen"
+
+msgid "Discard changes"
+msgstr "Wijzigingen verwerpen"
+
+msgid "Save changes"
+msgstr "Wijzigingen opslaan"
+

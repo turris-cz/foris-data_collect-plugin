@@ -1,0 +1,232 @@
+# Foris - web administration interface for OpenWrt based on NETCONF
+# Copyright (C) 2013 CZ.NIC, z.s.p.o. <http://www.nic.cz>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+# Jan Cermak <jan.cermak@nic.cz>, 2014.
+# Beda Kosata <bedrich.kosata@nic.cz>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: Foris 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-19 15:48+0200\n"
+"PO-Revision-Date: 2018-07-29 21:35+0000\n"
+"Last-Translator: Josef Schlehofer <pepe@bloodkings.eu>\n"
+"Language: cs\n"
+"Language-Team: Czech "
+"<https://hosted.weblate.org/projects/turris/foris/cs/>\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+msgid "Emulated services"
+msgstr "Emulované služby"
+
+msgid ""
+"One of uCollect's features is emulation of some commonly abused services."
+" If this function is enabled, uCollect is listening for incoming "
+"connection attempts to these services. Enabling of the emulated services "
+"has no effect if another service is already listening on its default port"
+" (port numbers are listed below)."
+msgstr ""
+"Aplikace uCollect umožňuje emulovat některé často zneužívané služby. "
+"Pokud je tato funkce zapnuta, uCollect zaznamenává pokusy o přihlášení do"
+" těchto služeb. Zapnutí emulace služby nemá žádný efekt, pokud už na "
+"jejím portu očekává spojení jiná aplikace (tyto porty jsou u jednotlivých"
+" služeb uvedeny)."
+
+msgid "Telnet (23/TCP)"
+msgstr "Telnet (23/TCP)"
+
+msgid "Telnet - alternative port (2323/TCP)"
+msgstr "Telnet – alternativní port (2323/TCP)"
+
+msgid "HTTP (80/TCP)"
+msgstr "HTTP (80/TCP)"
+
+msgid "Squid HTTP proxy (3128/TCP)"
+msgstr "Squid HTTP proxy (3128/TCP)"
+
+msgid "Polipo HTTP proxy (8123/TCP)"
+msgstr "Polipo HTTP proxy (8123/TCP)"
+
+msgid "HTTP proxy (8080/TCP)"
+msgstr "HTTP proxy (8080/TCP)"
+
+msgid "Collect credentials"
+msgstr "Ukládat zkoušené přihlašovací údaje"
+
+msgid ""
+"If this option is enabled, user names and passwords are collected and "
+"sent to server in addition to the IP address of the client."
+msgstr ""
+"Pokud je tato volba zapnuta, budou kromě IP adres připojujících se "
+"klientů zaznamenávána i zadaná přihlašovací jména a hesla."
+
+msgid "Data collection"
+msgstr "Sběr dat"
+
+msgid "Enable data collection"
+msgstr "Zapnout sběr dat"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Failed to query the server."
+msgstr "Nepodařilo se položit dotaz serveru."
+
+msgid "Failed to verify the router's registration."
+msgstr "Nepodařilo se ověřit, zda byl směrovač registrován."
+
+msgid "Online"
+msgstr "Online"
+
+msgid "Offline"
+msgstr "Offline"
+
+msgid "Unknown status"
+msgstr "Neznámý stav"
+
+msgid "Configuration was successfully saved."
+msgstr "Nastavení bylo úspěšně uloženo."
+
+msgid ""
+"Failed to update emulated services. Note that you might need to wait till"
+" ucollect is properly installed."
+msgstr ""
+"Nepodařilo se nastavit emulované služby. Pozn. před nastavováním "
+"emulovaných služeb je nezbytné mít nainstalovaný ucollect."
+
+msgid "There were some errors in your input."
+msgstr "Některé z vámi zadaných údajů nejsou platné."
+
+#, python-format
+msgid "An error ocurred when checking the registration: <br><pre>%(error)s</pre>"
+msgstr ""
+"Při ověřování registrace došlo k následující chybě: "
+"<br><pre>%(error)s</pre>"
+
+msgid ""
+"Registration for the entered email is valid. Now you can enable the data "
+"collection."
+msgstr ""
+"Registrace pro tuto e-mailovou adresu je platná. Nyní můžete aktivovat "
+"sběr dat."
+
+#, python-format
+msgid ""
+"This router is currently assigned to a different email address. Please "
+"continue to the <a href=\"%(url)s\">Turris website</a> and use the "
+"registration code <strong>%(reg_num)s</strong> for a re-assignment to "
+"your email address."
+msgstr ""
+"Tento směrovač je v současnosti přiřazen k jiné e-mailové adrese. "
+"Pokračujte na <a href=\"%(url)s\">portál Turris</a> a použijte "
+"registrační kód <strong>%(reg_num)s</strong> pro přiřazení k vaší "
+"e-mailové adrese."
+
+#, python-format
+msgid ""
+"This email address is not registered yet. Please continue to the <a "
+"href=\"%(url)s\">Turris website</a> and use the registration code "
+"<strong>%(reg_num)s</strong> to create a new account."
+msgstr ""
+"Tato e-mailová adresa zatím není zaregistrována. Pokračujte na <a "
+"href=\"%(url)s\">portál Turris</a> a použijte registrační kód "
+"<strong>%(reg_num)s</strong> pro vytvoření nového účtu."
+
+msgid "Router failed to authorize. Please try to validate our email later."
+msgstr ""
+"Směrovači se nepodařilo ověřit vůči serveru. Zkuste prosím svůj e-mail "
+"ověřit později."
+
+msgid "Wrong HTTP method."
+msgstr "Neplatná HTTP metoda."
+
+msgid ""
+"With the Turris router you can join Project Turris which is a non-profit "
+"research project founded by the CZ.NIC association, a .CZ domain "
+"registry. By joining the project, your router will act as a probe which "
+"analyzes traffic between your home network and the Internet and helps to "
+"identify malicious data flows. Once such a flow is detected your router "
+"notifies the Turris headquarters which can compare the flow with data "
+"from the rest of the probes and assign it a threat level. If the flow is "
+"identified as an attack Turris headquarters can prepare an update which "
+"is distributed to every Turris router and helps them to protect "
+"themselves against the attack."
+msgstr ""
+"Se směrovačem Turris je možné zapojit se do projektu Turris, což je "
+"neziskový výzkumný projekt sdružení CZ.NIC, z.s.p.o., správce české "
+"národní domény .CZ. Tím se váš směrovač současně stane sondou, která "
+"analyzuje provoz mezi Internetem a domácí sítí a pomáhá identifikovat "
+"podezřelé datové toky zvenčí. Při jejich zjištění pak upozorní centrálu "
+"Turris na možný útok. Ta porovná data z ostatních připojených směrovačů "
+"Turris a vyhodnotit nebezpečnost zjištěného provozu. V případě, že je "
+"útok odhalen, jsou vytvořeny aktualizace, které jsou distribuovány na "
+"všechny směrovače Turris a ty jsou tak chráněny."
+
+msgid ""
+"The Updater is currently disabled. You must enable it first to enable "
+"data collection."
+msgstr ""
+"Aktualizace jsou vypnuté, pro zapnutí sběru dat je třeba je nejprve "
+"zapnout."
+
+msgid ""
+"If you want to join the Turris project you need to register on the Turris"
+" portal first. Enter the email address you want to register with or which"
+" you have used for this purpose before:"
+msgstr ""
+"Pokud chcete plně využívat výhod tohoto projektu, je nutné se nejprve "
+"zaregistrovat na portálu Turris. Zde zadejte svou e-mailovou adresu, "
+"kterou si chcete zaregistrovat nebo která byla použita pro registraci v "
+"minulosti:"
+
+msgid "Validate email"
+msgstr "Ověřit e-mail"
+
+msgid "Save"
+msgstr "Uložit"
+
+#, fuzzy
+msgid "Data collection status"
+msgstr "Sběr dat"
+
+#, fuzzy
+msgid "uCollect data"
+msgstr "uCollect"
+
+#, python-format
+msgid "Time of last update: %(datetime)s"
+msgstr "Čas poslední aktualizace: %(datetime)s"
+
+#, fuzzy, python-format
+msgid "status updated %(seconds)s second ago"
+msgid_plural "status updated %(seconds)s seconds ago"
+msgstr[0] "(stav aktualizován před %d sekundou)"
+msgstr[1] "(stav aktualizován před %d sekundami)"
+msgstr[2] "(stav aktualizován před %d sekundami)"
+
+#, fuzzy
+msgid "firewall logs"
+msgstr "Odesílání záznamů (log) z brány firewall"
+
+msgid "Refresh"
+msgstr "Aktualizovat"
+
+msgid "Discard changes"
+msgstr "Zahodit změny"
+
+msgid "Save changes"
+msgstr "Uložit změny"
+

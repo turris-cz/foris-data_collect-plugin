@@ -1,0 +1,221 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Foris package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  Foris\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-19 15:48+0200\n"
+"PO-Revision-Date: 2017-06-30 22:33+0000\n"
+"Last-Translator: Fln <weblate.org@fln.lt>\n"
+"Language: lt\n"
+"Language-Team: Lithuanian "
+"<https://hosted.weblate.org/projects/turris/foris/lt/>\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || "
+"n%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+msgid "Emulated services"
+msgstr "Emuliuojami servisai"
+
+msgid ""
+"One of uCollect's features is emulation of some commonly abused services."
+" If this function is enabled, uCollect is listening for incoming "
+"connection attempts to these services. Enabling of the emulated services "
+"has no effect if another service is already listening on its default port"
+" (port numbers are listed below)."
+msgstr ""
+"Viena iš uCollect funkcijų yra dažnai išnaudojamų servisų emuliavimas. "
+"Jei ši funkcija įjungta, uCollect priims bandymus prisijungti prie šių "
+"servisų. Emuliuojamų servisų įjungimas netrukdys jau esamiems servisams "
+"kurie naudoja tuos pačius portus (portų sąrašas pateiktas žemiau)."
+
+msgid "Telnet (23/TCP)"
+msgstr "Telnet (23/TCP)"
+
+msgid "Telnet - alternative port (2323/TCP)"
+msgstr "Telnet - kitas portas (2323/TCP)"
+
+msgid "HTTP (80/TCP)"
+msgstr "HTTP (80/TCP)"
+
+msgid "Squid HTTP proxy (3128/TCP)"
+msgstr "Squid HTTP proxy (3128/TCP)"
+
+msgid "Polipo HTTP proxy (8123/TCP)"
+msgstr "Polipo HTTP proxy (8123/TCP)"
+
+msgid "HTTP proxy (8080/TCP)"
+msgstr "HTTP proxy (8080/TCP)"
+
+msgid "Collect credentials"
+msgstr "Rinkti prisijungimo duomenis"
+
+msgid ""
+"If this option is enabled, user names and passwords are collected and "
+"sent to server in addition to the IP address of the client."
+msgstr ""
+"Jei ši funkcija įjungta, siunčiami ne tik klientų IP adresai bet ir "
+"surinkti prisijungimo vardai bei slaptažodžiai."
+
+msgid "Data collection"
+msgstr "Duomenų rinkimas"
+
+msgid "Enable data collection"
+msgstr "Įjungti duomenų rinkimą"
+
+msgid "Email"
+msgstr "El. paštas"
+
+#, fuzzy
+msgid "Failed to query the server."
+msgstr "Nepavyko patvirtinti atnaujinimo."
+
+#, fuzzy
+msgid "Failed to verify the router's registration."
+msgstr "Nepavyko patikrinti tinko ryšio."
+
+msgid "Online"
+msgstr "Ryšys yra"
+
+msgid "Offline"
+msgstr "Ryšio nėra"
+
+msgid "Unknown status"
+msgstr "Nežinoma būklė"
+
+msgid "Configuration was successfully saved."
+msgstr "Konfigūracija sėkmingai išsaugota."
+
+msgid ""
+"Failed to update emulated services. Note that you might need to wait till"
+" ucollect is properly installed."
+msgstr ""
+
+msgid "There were some errors in your input."
+msgstr "Įvestuose duomenyse yra klaidų."
+
+#, fuzzy, python-format
+msgid "An error ocurred when checking the registration: <br><pre>%(error)s</pre>"
+msgstr "Tikrinant registraciją Įvyko klaida: <br><pre>%(error)s</pre>"
+
+msgid ""
+"Registration for the entered email is valid. Now you can enable the data "
+"collection."
+msgstr ""
+"Registracija įvestam el. pašto adresui patikrinta. Dabar galite įjungti "
+"duomenų rinkimą."
+
+#, python-format
+msgid ""
+"This router is currently assigned to a different email address. Please "
+"continue to the <a href=\"%(url)s\">Turris website</a> and use the "
+"registration code <strong>%(reg_num)s</strong> for a re-assignment to "
+"your email address."
+msgstr ""
+"Šis maršutizatorius šiuo metu priskirtas kitam el. pašto adresui. "
+"Priskyrimui prie jūsų el. pašto adreso eikite į <a "
+"href=\"%(url)s\">Turris svetainę</a> ir panaudokite "
+"<strong>%(reg_num)s</strong> registracijos kodą."
+
+#, python-format
+msgid ""
+"This email address is not registered yet. Please continue to the <a "
+"href=\"%(url)s\">Turris website</a> and use the registration code "
+"<strong>%(reg_num)s</strong> to create a new account."
+msgstr ""
+"Šis el. pašto adresas dar nėra registruotas. Naujos paskyros sukūrimui "
+"eikite į <a href=\"%(url)s\">Turris svetainę</a> ir panaudokite "
+"<strong>%(reg_num)s</strong> registracijos kodą."
+
+msgid "Router failed to authorize. Please try to validate our email later."
+msgstr ""
+
+msgid "Wrong HTTP method."
+msgstr "Klaidingas HTTP metodas."
+
+#, fuzzy
+msgid ""
+"With the Turris router you can join Project Turris which is a non-profit "
+"research project founded by the CZ.NIC association, a .CZ domain "
+"registry. By joining the project, your router will act as a probe which "
+"analyzes traffic between your home network and the Internet and helps to "
+"identify malicious data flows. Once such a flow is detected your router "
+"notifies the Turris headquarters which can compare the flow with data "
+"from the rest of the probes and assign it a threat level. If the flow is "
+"identified as an attack Turris headquarters can prepare an update which "
+"is distributed to every Turris router and helps them to protect "
+"themselves against the attack."
+msgstr ""
+"Naudodami Turris Omnia maršrutizatorių galite prisijungti prie Turris "
+"Projekto. Tai yra mokslinis, pelno nesiekiantis projektas, įkurtas CZ.NIC"
+" asociacijos, kuri yra .CZ domeno administratoriaus. Prisijungus prie "
+"projekto jūsų maršrutizatorius pradės veikti kaip stebėjimo įrenginys, "
+"analizuojantis duomenų srautą tarp jūsų namų tinklo ir interneto, bei "
+"ieškantis kenkėjiškų duomenų srautų. Maršrutizatorius aptikęs kenkėjišką "
+"duomenų srautą perduoda informaciją į Turris būstine, kur gauti duomenys "
+"yra lyginami su duomenimis gautais iš kitų stebėjimo mazgų bei nustatymas"
+" grėsmės lygis. Jei duomenų srautas atpažįstamas kaip ataka Turris "
+"būstinėje gali būti paruoštas atnaujinimas, padėsiantis apsiginti nuo "
+"šios atakos, kuris išsiunčiamas visiems Turris maršrutizatoriams."
+
+msgid ""
+"The Updater is currently disabled. You must enable it first to enable "
+"data collection."
+msgstr ""
+"Automatiniai atnaujinimai šiuo metu išjungti. Prieš įjungiant duomenų "
+"rinkimą įjunkite automatinius atnaujinimus."
+
+msgid ""
+"If you want to join the Turris project you need to register on the Turris"
+" portal first. Enter the email address you want to register with or which"
+" you have used for this purpose before:"
+msgstr ""
+"Jei norite prisijungti prie Turris projekto, pirmiausia turite "
+"užsiregistruoti Turris svetainėje. Įveskite el. pašto adresą su kuriuo "
+"norėtumėte registruotis arba kurį jau naudojote registracijoje:"
+
+msgid "Validate email"
+msgstr "Tikrinti el. pašto adresą"
+
+msgid "Save"
+msgstr "Išsaugoti"
+
+#, fuzzy
+msgid "Data collection status"
+msgstr "Duomenų rinkimas"
+
+#, fuzzy
+msgid "uCollect data"
+msgstr "uCollect"
+
+#, python-format
+msgid "Time of last update: %(datetime)s"
+msgstr "Paskutinį kartą atnaujinta: %(datetime)s"
+
+#, fuzzy, python-format
+msgid "status updated %(seconds)s second ago"
+msgid_plural "status updated %(seconds)s seconds ago"
+msgstr[0] "(būsena atnaujinta prieš %d sekundę)"
+msgstr[1] "(būsena atnaujinta prieš %d sekundes)"
+msgstr[2] "(būsena atnaujinta prieš %d sekundžių)"
+msgstr[3] "(būsena atnaujinta prieš %d sekundę)"
+
+#, fuzzy
+msgid "firewall logs"
+msgstr "Ugniasienės logų siuntimas"
+
+msgid "Refresh"
+msgstr "Atnaujinti"
+
+msgid "Discard changes"
+msgstr "Atmesti pakeitimus"
+
+msgid "Save changes"
+msgstr "Išsaugoti pakeitimus"
+

@@ -54,7 +54,7 @@
             {{ ucollect_status['state_trans'] }}
             {% if ucollect_status['state'] != "unknown" %}
             <abbr title="{% trans datetime=helpers.translate_datetime(ucollect_status['datetime']) %}Time of last update: {{ datetime }}{% endtrans %}">
-                  {% trans seconds=ucollect_status['seconds_ago'] %}
+                  {% trans trimmed seconds=ucollect_status['seconds_ago'] %}
                   status updated {{ seconds }} second ago
                   {% pluralize %}
                   status updated {{ seconds }} seconds ago
@@ -70,7 +70,7 @@
             {{ firewall_status['state_trans'] }}
             {% if firewall_status['state'] != "unknown" %}
                 <abbr title="{% trans datetime=helpers.translate_datetime(firewall_status['datetime']) %}Time of last update: {{ datetime }}{% endtrans %}">
-                  {% trans seconds=firewall_status['seconds_ago'] %}
+                  {% trans trimmed seconds=firewall_status['seconds_ago'] %}
                   status updated {{ seconds }} second ago
                   {% pluralize %}
                   status updated {{ seconds }} seconds ago

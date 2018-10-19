@@ -1,0 +1,180 @@
+# Translations template for Foris DataCollect Plugin.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the Foris DataCollect
+# Plugin project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Foris DataCollect Plugin 0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-10-19 15:48+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+msgid "Emulated services"
+msgstr ""
+
+msgid ""
+"One of uCollect's features is emulation of some commonly abused services."
+" If this function is enabled, uCollect is listening for incoming "
+"connection attempts to these services. Enabling of the emulated services "
+"has no effect if another service is already listening on its default port"
+" (port numbers are listed below)."
+msgstr ""
+
+msgid "Telnet (23/TCP)"
+msgstr ""
+
+msgid "Telnet - alternative port (2323/TCP)"
+msgstr ""
+
+msgid "HTTP (80/TCP)"
+msgstr ""
+
+msgid "Squid HTTP proxy (3128/TCP)"
+msgstr ""
+
+msgid "Polipo HTTP proxy (8123/TCP)"
+msgstr ""
+
+msgid "HTTP proxy (8080/TCP)"
+msgstr ""
+
+msgid "Collect credentials"
+msgstr ""
+
+msgid ""
+"If this option is enabled, user names and passwords are collected and "
+"sent to server in addition to the IP address of the client."
+msgstr ""
+
+msgid "Data collection"
+msgstr ""
+
+msgid "Enable data collection"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Failed to query the server."
+msgstr ""
+
+msgid "Failed to verify the router's registration."
+msgstr ""
+
+msgid "Online"
+msgstr ""
+
+msgid "Offline"
+msgstr ""
+
+msgid "Unknown status"
+msgstr ""
+
+msgid "Configuration was successfully saved."
+msgstr ""
+
+msgid ""
+"Failed to update emulated services. Note that you might need to wait till"
+" ucollect is properly installed."
+msgstr ""
+
+msgid "There were some errors in your input."
+msgstr ""
+
+#, python-format
+msgid "An error ocurred when checking the registration: <br><pre>%(error)s</pre>"
+msgstr ""
+
+msgid ""
+"Registration for the entered email is valid. Now you can enable the data "
+"collection."
+msgstr ""
+
+#, python-format
+msgid ""
+"This router is currently assigned to a different email address. Please "
+"continue to the <a href=\"%(url)s\">Turris website</a> and use the "
+"registration code <strong>%(reg_num)s</strong> for a re-assignment to "
+"your email address."
+msgstr ""
+
+#, python-format
+msgid ""
+"This email address is not registered yet. Please continue to the <a "
+"href=\"%(url)s\">Turris website</a> and use the registration code "
+"<strong>%(reg_num)s</strong> to create a new account."
+msgstr ""
+
+msgid "Router failed to authorize. Please try to validate our email later."
+msgstr ""
+
+msgid "Wrong HTTP method."
+msgstr ""
+
+msgid ""
+"With the Turris router you can join Project Turris which is a non-profit "
+"research project founded by the CZ.NIC association, a .CZ domain "
+"registry. By joining the project, your router will act as a probe which "
+"analyzes traffic between your home network and the Internet and helps to "
+"identify malicious data flows. Once such a flow is detected your router "
+"notifies the Turris headquarters which can compare the flow with data "
+"from the rest of the probes and assign it a threat level. If the flow is "
+"identified as an attack Turris headquarters can prepare an update which "
+"is distributed to every Turris router and helps them to protect "
+"themselves against the attack."
+msgstr ""
+
+msgid ""
+"The Updater is currently disabled. You must enable it first to enable "
+"data collection."
+msgstr ""
+
+msgid ""
+"If you want to join the Turris project you need to register on the Turris"
+" portal first. Enter the email address you want to register with or which"
+" you have used for this purpose before:"
+msgstr ""
+
+msgid "Validate email"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Data collection status"
+msgstr ""
+
+msgid "uCollect data"
+msgstr ""
+
+#, python-format
+msgid "Time of last update: %(datetime)s"
+msgstr ""
+
+#, python-format
+msgid "status updated %(seconds)s second ago"
+msgid_plural "status updated %(seconds)s seconds ago"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "firewall logs"
+msgstr ""
+
+msgid "Refresh"
+msgstr ""
+
+msgid "Discard changes"
+msgstr ""
+
+msgid "Save changes"
+msgstr ""
+

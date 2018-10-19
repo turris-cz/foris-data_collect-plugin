@@ -1,0 +1,223 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Foris package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  Foris\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-19 15:48+0200\n"
+"PO-Revision-Date: 2018-04-23 10:06+0000\n"
+"Last-Translator: Roberto Zilli <zetaerre@gmail.com>\n"
+"Language: it\n"
+"Language-Team: Italian "
+"<https://hosted.weblate.org/projects/turris/foris/it/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+msgid "Emulated services"
+msgstr "Servizi emulati"
+
+msgid ""
+"One of uCollect's features is emulation of some commonly abused services."
+" If this function is enabled, uCollect is listening for incoming "
+"connection attempts to these services. Enabling of the emulated services "
+"has no effect if another service is already listening on its default port"
+" (port numbers are listed below)."
+msgstr ""
+"Una delle caratteristiche di uCollect è l'emulazione di alcuni servizi "
+"comunemente abusati. Se questa funzione è abilitata, uCollect ascolta i "
+"tentativi di connessione in arrivo a questi servizi. L'abilitazione dei "
+"servizi emulati non ha effetto se un altro servizio sta già ascoltando la"
+" porta predefinita (i numeri delle porte sono elencati di seguito)."
+
+msgid "Telnet (23/TCP)"
+msgstr "Telnet (23/TCP)"
+
+msgid "Telnet - alternative port (2323/TCP)"
+msgstr "Telnet - porta alternativa (2323/TCP)"
+
+msgid "HTTP (80/TCP)"
+msgstr "HTTP (80/TCP)"
+
+msgid "Squid HTTP proxy (3128/TCP)"
+msgstr "Squid proxy HTTP (3128/TCP)"
+
+msgid "Polipo HTTP proxy (8123/TCP)"
+msgstr "Polipo proxy  HTTP (8123/TCP)"
+
+msgid "HTTP proxy (8080/TCP)"
+msgstr "HTTP proxy (8080/TCP)"
+
+msgid "Collect credentials"
+msgstr "Raccogli le credenziali"
+
+msgid ""
+"If this option is enabled, user names and passwords are collected and "
+"sent to server in addition to the IP address of the client."
+msgstr ""
+"Se questa opzione è abilitata, i nomi utente e le password vengono "
+"raccolti e inviati al server in aggiunta all'indirizzo IP del client."
+
+msgid "Data collection"
+msgstr "Raccolta dati"
+
+msgid "Enable data collection"
+msgstr "Attiva raccolta dati"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Failed to query the server."
+msgstr "Impossibile interrogare il server."
+
+msgid "Failed to verify the router's registration."
+msgstr "Impossibile verificare la registrazione del router."
+
+msgid "Online"
+msgstr "Connesso"
+
+msgid "Offline"
+msgstr "Disconnesso"
+
+msgid "Unknown status"
+msgstr "Stato sconosciuto"
+
+msgid "Configuration was successfully saved."
+msgstr "Configurazione salvata con successo."
+
+msgid ""
+"Failed to update emulated services. Note that you might need to wait till"
+" ucollect is properly installed."
+msgstr ""
+
+msgid "There were some errors in your input."
+msgstr "Ci sono alcuni errori nella digitazione."
+
+#, python-format
+msgid "An error ocurred when checking the registration: <br><pre>%(error)s</pre>"
+msgstr ""
+"Si è verificato un errore durate il controllo della registrazione: "
+"<br><pre>%(error)s</pre>"
+
+msgid ""
+"Registration for the entered email is valid. Now you can enable the data "
+"collection."
+msgstr ""
+"La registrazione per l'email inserita è valida. Ora è possibile attivare "
+"la raccolta dati."
+
+#, python-format
+msgid ""
+"This router is currently assigned to a different email address. Please "
+"continue to the <a href=\"%(url)s\">Turris website</a> and use the "
+"registration code <strong>%(reg_num)s</strong> for a re-assignment to "
+"your email address."
+msgstr ""
+"Questo router è attualmente assegnato a un diverso indirizzo e-mail. Per "
+"favore seguire <a href=\"%(url)s\">nel sito Turris</a> e usando il codice"
+" di registrazione <strong>%(reg_num)s</strong> per una nuova assegnazione"
+" al tuo indirizzo email."
+
+#, python-format
+msgid ""
+"This email address is not registered yet. Please continue to the <a "
+"href=\"%(url)s\">Turris website</a> and use the registration code "
+"<strong>%(reg_num)s</strong> to create a new account."
+msgstr ""
+"Questo indirizzo email non è ancora stato registrato. Per favore seguire "
+"<a href=\"%(url)s\">nel sito Turris</a> e usare il codice di "
+"registrazione <strong>%(reg_num)s</strong> per creare un nuovo account."
+
+msgid "Router failed to authorize. Please try to validate our email later."
+msgstr ""
+"Il router non è stato autorizzato. Si prega di provare a convalidare la "
+"nostra e-mail più tardi."
+
+msgid "Wrong HTTP method."
+msgstr "Metodo HTTP errato."
+
+msgid ""
+"With the Turris router you can join Project Turris which is a non-profit "
+"research project founded by the CZ.NIC association, a .CZ domain "
+"registry. By joining the project, your router will act as a probe which "
+"analyzes traffic between your home network and the Internet and helps to "
+"identify malicious data flows. Once such a flow is detected your router "
+"notifies the Turris headquarters which can compare the flow with data "
+"from the rest of the probes and assign it a threat level. If the flow is "
+"identified as an attack Turris headquarters can prepare an update which "
+"is distributed to every Turris router and helps them to protect "
+"themselves against the attack."
+msgstr ""
+"Con il router Turris Omnia è possibile partecipare al \"Project Turris\","
+" un progetto di ricerca senza scopo di lucro fondato dall'associazione "
+"CZ.NIC, il registro di dominio .CZ. Entrando nel progetto, il tuo router "
+"agirà come una sonda che analizza il traffico tra la tua rete domestica "
+"ed Internet ed aiuta a identificare flussi di dati dannosi. Una volta "
+"rilevato tale flusso, il router notifica alla sede centrale di Turris che"
+" può confrontare il flusso con i dati provenienti dal resto delle sonde e"
+" assegnargli un livello di minaccia. Se il flusso è identificato come "
+"attacco, la sede di Turris può preparare un aggiornamento distribuito a "
+"ogni router Turris e aiutarli a proteggersi dagli attacchi."
+
+msgid ""
+"The Updater is currently disabled. You must enable it first to enable "
+"data collection."
+msgstr ""
+"L'aggiornamento è attualmente disattivato. Per attivare la raccolta dei "
+"dati è necessario che venga abilitato."
+
+msgid ""
+"If you want to join the Turris project you need to register on the Turris"
+" portal first. Enter the email address you want to register with or which"
+" you have used for this purpose before:"
+msgstr ""
+"Se vuoi iscriverti al progetto Turris devi prima registrarsi sul portale "
+"Turris. Inserisci l'indirizzo di posta elettronica con cui si desidera "
+"registrare o che hai utilizzato a tale scopo prima:"
+
+msgid "Validate email"
+msgstr "Validare l'email"
+
+msgid "Save"
+msgstr "Salva"
+
+#, fuzzy
+msgid "Data collection status"
+msgstr "Raccolta dati"
+
+#, fuzzy
+msgid "uCollect data"
+msgstr "uCollect"
+
+#, python-format
+msgid "Time of last update: %(datetime)s"
+msgstr "Data e ora dell'ultimo aggiornamento: %(datetime)s"
+
+#, fuzzy, python-format
+msgid "status updated %(seconds)s second ago"
+msgid_plural "status updated %(seconds)s seconds ago"
+msgstr[0] ""
+"Uno\n"
+"(stato aggiornato %d secondi fa)"
+msgstr[1] ""
+"Altri\n"
+"(stato aggiornato %d secondi fa)"
+
+#, fuzzy
+msgid "firewall logs"
+msgstr "Invio logs del firewall"
+
+msgid "Refresh"
+msgstr "Ricaricare"
+
+msgid "Discard changes"
+msgstr "Non salvare le modifiche"
+
+msgid "Save changes"
+msgstr "Salva le modifiche"
+
