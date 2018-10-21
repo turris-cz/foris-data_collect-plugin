@@ -18,15 +18,16 @@ msgstr ""
 "Project-Id-Version: Foris 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-19 15:48+0200\n"
-"PO-Revision-Date: 2018-07-29 21:35+0000\n"
-"Last-Translator: Josef Schlehofer <pepe@bloodkings.eu>\n"
+"PO-Revision-Date: 2018-10-22 09:25+0000\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/turris/"
+"foris-data_collect-plugin/cs/>\n"
 "Language: cs\n"
-"Language-Team: Czech "
-"<https://hosted.weblate.org/projects/turris/foris/cs/>\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 3.3-dev\n"
 "Generated-By: Babel 2.6.0\n"
 
 msgid "Emulated services"
@@ -198,28 +199,25 @@ msgstr "Ověřit e-mail"
 msgid "Save"
 msgstr "Uložit"
 
-#, fuzzy
 msgid "Data collection status"
-msgstr "Sběr dat"
+msgstr "Stav sběru dat"
 
-#, fuzzy
 msgid "uCollect data"
-msgstr "uCollect"
+msgstr "Data uCollect"
 
 #, python-format
 msgid "Time of last update: %(datetime)s"
 msgstr "Čas poslední aktualizace: %(datetime)s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "status updated %(seconds)s second ago"
 msgid_plural "status updated %(seconds)s seconds ago"
-msgstr[0] "(stav aktualizován před %d sekundou)"
-msgstr[1] "(stav aktualizován před %d sekundami)"
-msgstr[2] "(stav aktualizován před %d sekundami)"
+msgstr[0] "stav aktualizován před %(seconds)s sekundou"
+msgstr[1] "stav aktualizován před %(seconds)s sekundami"
+msgstr[2] "stav aktualizován před %(seconds)s sekundami"
 
-#, fuzzy
 msgid "firewall logs"
-msgstr "Odesílání záznamů (log) z brány firewall"
+msgstr "Záznamy (log) z brány firewall"
 
 msgid "Refresh"
 msgstr "Aktualizovat"
@@ -229,4 +227,3 @@ msgstr "Zahodit změny"
 
 msgid "Save changes"
 msgstr "Uložit změny"
-
