@@ -172,7 +172,7 @@ msgstr "마지막 갱신 시각: %(datetime)s"
 #, fuzzy, python-format
 msgid "status updated %(seconds)s second ago"
 msgid_plural "status updated %(seconds)s seconds ago"
-msgstr[0] "(%d초 전 상태 업데이트됨)"
+msgstr[0] "(%(seconds)s초 전 상태 업데이트됨)"
 
 #, fuzzy
 msgid "firewall logs"

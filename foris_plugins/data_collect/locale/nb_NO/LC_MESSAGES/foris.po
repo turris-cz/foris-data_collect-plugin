@@ -184,8 +184,8 @@ msgstr "Tidspunkt for siste oppdatering: %(datetime)s"
 #, fuzzy, python-format
 msgid "status updated %(seconds)s second ago"
 msgid_plural "status updated %(seconds)s seconds ago"
-msgstr[0] "(status oppdatert for %d sekund siden)"
-msgstr[1] "(status oppdatert for %d sekunder siden)"
+msgstr[0] "(status oppdatert for %(seconds)s sekund siden)"
+msgstr[1] "(status oppdatert for %(seconds)s sekunder siden)"
 
 #, fuzzy
 msgid "firewall logs"

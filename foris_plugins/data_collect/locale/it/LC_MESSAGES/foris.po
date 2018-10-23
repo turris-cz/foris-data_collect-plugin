@@ -203,10 +203,10 @@ msgid "status updated %(seconds)s second ago"
 msgid_plural "status updated %(seconds)s seconds ago"
 msgstr[0] ""
 "Uno\n"
-"(stato aggiornato %d secondi fa)"
+"(stato aggiornato %(seconds)s secondi fa)"
 msgstr[1] ""
 "Altri\n"
-"(stato aggiornato %d secondi fa)"
+"(stato aggiornato %(seconds)s secondi fa)"
 
 #, fuzzy
 msgid "firewall logs"

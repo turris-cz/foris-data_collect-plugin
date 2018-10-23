@@ -204,8 +204,8 @@ msgstr "Utolsó frissítés időpontja: %(datetime)s"
 #, fuzzy, python-format
 msgid "status updated %(seconds)s second ago"
 msgid_plural "status updated %(seconds)s seconds ago"
-msgstr[0] "(állapot frissítve %d másodperccel ezelőtt)"
-msgstr[1] "(állapot frissítve %d másodperccel ezelőtt)"
+msgstr[0] "(állapot frissítve %(seconds)s másodperccel ezelőtt)"
+msgstr[1] "(állapot frissítve %(seconds)s másodperccel ezelőtt)"
 
 #, fuzzy
 msgid "firewall logs"

@@ -201,10 +201,10 @@ msgstr "Paskutinį kartą atnaujinta: %(datetime)s"
 #, fuzzy, python-format
 msgid "status updated %(seconds)s second ago"
 msgid_plural "status updated %(seconds)s seconds ago"
-msgstr[0] "(būsena atnaujinta prieš %d sekundę)"
-msgstr[1] "(būsena atnaujinta prieš %d sekundes)"
-msgstr[2] "(būsena atnaujinta prieš %d sekundžių)"
-msgstr[3] "(būsena atnaujinta prieš %d sekundę)"
+msgstr[0] "(būsena atnaujinta prieš %(seconds)s sekundę)"
+msgstr[1] "(būsena atnaujinta prieš %(seconds)s sekundes)"
+msgstr[2] "(būsena atnaujinta prieš %(seconds)s sekundžių)"
+msgstr[3] "(būsena atnaujinta prieš %(seconds)s sekundę)"
 
 #, fuzzy
 msgid "firewall logs"

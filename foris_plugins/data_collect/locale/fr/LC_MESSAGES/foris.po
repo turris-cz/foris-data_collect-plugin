@@ -207,8 +207,8 @@ msgstr "Date de dernière mise à jour : %(datetime)s"
 #, fuzzy, python-format
 msgid "status updated %(seconds)s second ago"
 msgid_plural "status updated %(seconds)s seconds ago"
-msgstr[0] "(statut mis à jour il y a %d seconde)"
-msgstr[1] "(statut mis à jour il y a %d secondes)"
+msgstr[0] "(statut mis à jour il y a %(seconds)s seconde)"
+msgstr[1] "(statut mis à jour il y a %(seconds)s secondes)"
 
 #, fuzzy
 msgid "firewall logs"
