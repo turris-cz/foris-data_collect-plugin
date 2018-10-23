@@ -1,26 +1,28 @@
-# Translations template for Foris DataCollect Plugin.
-# Copyright (C) 2018 ORGANIZATION
-# This file is distributed under the same license as the Foris DataCollect
-# Plugin project.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Foris package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Foris DataCollect Plugin 0\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"Project-Id-Version:  Foris\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-19 15:48+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-05-24 10:46+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language: nb\n"
+"Language-Team: Norwegian Bokmål "
+"<https://hosted.weblate.org/projects/turris/foris/nb/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
 msgid "Emulated services"
-msgstr ""
+msgstr "Emulerte tjenester"
 
+#, fuzzy
 msgid ""
 "One of uCollect's features is emulation of some commonly abused services."
 " If this function is enabled, uCollect is listening for incoming "
@@ -28,59 +30,67 @@ msgid ""
 "has no effect if another service is already listening on its default port"
 " (port numbers are listed below)."
 msgstr ""
+"En av uCollects funksjoner er emulering av noen tjenester som ofte "
+"misbrukes. Hvis denne funksjonen er påslått, vil uCollect lytte etter "
+"innkommende forsøk for de tjenestene. Å skru på emulerte tjenester har "
+"ingen effekt hvis en annen tjeneste allerede lytter på sin forvalgte port"
+" (portnummer er opplistet nedenfor)."
 
 msgid "Telnet (23/TCP)"
-msgstr ""
+msgstr "Telnet (23/TCP)"
 
 msgid "Telnet - alternative port (2323/TCP)"
-msgstr ""
+msgstr "Telnet - alternativ port (2323/TCP)"
 
 msgid "HTTP (80/TCP)"
-msgstr ""
+msgstr "HTTP (80/TCP)"
 
 msgid "Squid HTTP proxy (3128/TCP)"
-msgstr ""
+msgstr "Squid HTTP-mellomtjener (3128/TCP)"
 
 msgid "Polipo HTTP proxy (8123/TCP)"
-msgstr ""
+msgstr "Polipo HTTP-mellomtjener (8123/TCP)"
 
 msgid "HTTP proxy (8080/TCP)"
-msgstr ""
+msgstr "HTTP-mellomtjener (8080/TCP)"
 
 msgid "Collect credentials"
-msgstr ""
+msgstr "Samle inn innloggingsdetaljer"
 
+#, fuzzy
 msgid ""
 "If this option is enabled, user names and passwords are collected and "
 "sent to server in addition to the IP address of the client."
 msgstr ""
+"Hvis dette valget er påskrudd, vil brukernavn og passord bli sendt til "
+"tjenesten, i tillegg til IP-adressen til klienten."
 
 msgid "Data collection"
-msgstr ""
+msgstr "Datainnsamling"
 
 msgid "Enable data collection"
-msgstr ""
+msgstr "Skru på datainnsamling"
 
 msgid "Email"
-msgstr ""
+msgstr "E-postadresse"
 
 msgid "Failed to query the server."
-msgstr ""
+msgstr "Klarte ikke å sende spørring til tjeneren."
 
 msgid "Failed to verify the router's registration."
-msgstr ""
+msgstr "Klarte ikke å bekrefte ruterens registrering."
 
 msgid "Online"
-msgstr ""
+msgstr "Påkoblet"
 
 msgid "Offline"
-msgstr ""
+msgstr "Frakoblet"
 
 msgid "Unknown status"
-msgstr ""
+msgstr "Ukjent status"
 
 msgid "Configuration was successfully saved."
-msgstr ""
+msgstr "Oppsettet ble lagret."
 
 msgid ""
 "Failed to update emulated services. Note that you might need to wait till"
@@ -88,16 +98,19 @@ msgid ""
 msgstr ""
 
 msgid "There were some errors in your input."
-msgstr ""
+msgstr "Det var noen feil i dine inntastninger."
 
 #, python-format
 msgid "An error ocurred when checking the registration: <br><pre>%(error)s</pre>"
-msgstr ""
+msgstr "En feil inntraff under registreringssjekk: <br><pre>%(error)s</pre>"
 
+#, fuzzy
 msgid ""
 "Registration for the entered email is valid. Now you can enable the data "
 "collection."
 msgstr ""
+"Registreringen for den angitte e-postadressen er ugyldig. Du kan nå "
+"aktivere datainnsamlingen."
 
 #, python-format
 msgid ""
@@ -106,6 +119,9 @@ msgid ""
 "registration code <strong>%(reg_num)s</strong> for a re-assignment to "
 "your email address."
 msgstr ""
+"Denne ruteren er foreløpig registrert på en annen e-postadresse. Fortsett"
+" til <a href=\"%(url)s\">Turris-nettsiden</a> og bruk registreringskoden "
+"<strong>%(reg_num)s</strong> for å tilknytte den til din e-postadresse."
 
 #, python-format
 msgid ""
@@ -113,12 +129,15 @@ msgid ""
 "href=\"%(url)s\">Turris website</a> and use the registration code "
 "<strong>%(reg_num)s</strong> to create a new account."
 msgstr ""
+"Denne e-postadressen er ikke registrert enda. Fortsett til <a "
+"href=\"%(url)s\">Turris-nettsiden</a> og bruk registreringskoden "
+"<strong>%(reg_num)s</strong> for å opprette en ny konto."
 
 msgid "Router failed to authorize. Please try to validate our email later."
 msgstr ""
 
 msgid "Wrong HTTP method."
-msgstr ""
+msgstr "Gal HTTP-metode."
 
 msgid ""
 "With the Turris router you can join Project Turris which is a non-profit "
@@ -145,35 +164,39 @@ msgid ""
 msgstr ""
 
 msgid "Validate email"
-msgstr ""
+msgstr "Bekreft e-post"
 
 msgid "Save"
-msgstr ""
+msgstr "Lagre"
 
+#, fuzzy
 msgid "Data collection status"
-msgstr ""
+msgstr "Datainnsamling"
 
+#, fuzzy
 msgid "uCollect data"
-msgstr ""
+msgstr "uCollect"
 
 #, python-format
 msgid "Time of last update: %(datetime)s"
-msgstr ""
+msgstr "Tidspunkt for siste oppdatering: %(datetime)s"
 
-#, python-format
+#, fuzzy, python-format
 msgid "status updated %(seconds)s second ago"
 msgid_plural "status updated %(seconds)s seconds ago"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "(status oppdatert for %(seconds)s sekund siden)"
+msgstr[1] "(status oppdatert for %(seconds)s sekunder siden)"
 
+#, fuzzy
 msgid "firewall logs"
-msgstr ""
+msgstr "Innsending av brannmurslogger"
 
 msgid "Refresh"
-msgstr ""
+msgstr "Gjenoppfrisk"
 
 msgid "Discard changes"
-msgstr ""
+msgstr "Forkast endringer"
 
 msgid "Save changes"
-msgstr ""
+msgstr "Lagre endringer"
+
