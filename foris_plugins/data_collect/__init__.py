@@ -25,13 +25,12 @@ from datetime import datetime
 from urllib.parse import urlencode
 
 from foris import fapi
-from foris.common import require_contract_valid
 from foris.config import ConfigPageMixin, add_config_page
 from foris.config_handlers import BaseConfigHandler
 from foris.form import MultiCheckbox, Checkbox, Email
 from foris.plugins import ForisPlugin
 from foris.state import current_state
-from foris.utils import contract_valid, messages
+from foris.utils import messages
 from foris.utils.translators import gettext_dummy as gettext, gettext as _
 from foris.utils.routing import reverse
 
@@ -214,36 +213,35 @@ class DataCollectPluginPage(ConfigPageMixin, DataCollectPluginConfigHandler):
         self._prepare_render_args(kwargs)
 
         status = kwargs.pop("status", None)
-        if not contract_valid():
-            updater_data = current_state.backend.perform("updater", "get_enabled")
-            kwargs['updater_disabled'] = not updater_data["enabled"]
+        updater_data = current_state.backend.perform("updater", "get_enabled")
+        kwargs['updater_disabled'] = not updater_data["enabled"]
 
-            if updater_data["enabled"]:
-                collect_data = current_state.backend.perform("data_collect", "get")
-                firewall_status = collect_data["firewall_status"]
-                firewall_status["seconds_ago"] = int(time.time() - firewall_status["last_check"])
-                firewall_status["datetime"] = datetime.fromtimestamp(firewall_status["last_check"])
-                firewall_status["state_trans"] = self.SENDING_STATUS_TRANSLATION[
-                    firewall_status["state"]]
+        if updater_data["enabled"]:
+            collect_data = current_state.backend.perform("data_collect", "get")
+            firewall_status = collect_data["firewall_status"]
+            firewall_status["seconds_ago"] = int(time.time() - firewall_status["last_check"])
+            firewall_status["datetime"] = datetime.fromtimestamp(firewall_status["last_check"])
+            firewall_status["state_trans"] = self.SENDING_STATUS_TRANSLATION[
+                firewall_status["state"]]
 
-                ucollect_status = collect_data["ucollect_status"]
-                ucollect_status["seconds_ago"] = int(time.time() - ucollect_status["last_check"])
-                ucollect_status["datetime"] = datetime.fromtimestamp(ucollect_status["last_check"])
-                ucollect_status["state_trans"] = self.SENDING_STATUS_TRANSLATION[
-                    ucollect_status["state"]]
+            ucollect_status = collect_data["ucollect_status"]
+            ucollect_status["seconds_ago"] = int(time.time() - ucollect_status["last_check"])
+            ucollect_status["datetime"] = datetime.fromtimestamp(ucollect_status["last_check"])
+            ucollect_status["state_trans"] = self.SENDING_STATUS_TRANSLATION[
+                ucollect_status["state"]]
 
-                kwargs["ucollect_status"] = ucollect_status
-                kwargs["firewall_status"] = firewall_status
+            kwargs["ucollect_status"] = ucollect_status
+            kwargs["firewall_status"] = firewall_status
 
-                if collect_data["agreed"]:
-                    handler = CollectionToggleHandler(bottle.request.POST.decode())
-                    kwargs['collection_toggle_form'] = handler.form
-                    kwargs['agreed'] = collect_data["agreed"]
-                else:
-                    email = bottle.request.POST.decode().get(
-                        "email", bottle.request.GET.decode().get("email", ""))
-                    handler = RegistrationCheckHandler({"email": email})
-                    kwargs['registration_check_form'] = handler.form
+            if collect_data["agreed"]:
+                handler = CollectionToggleHandler(bottle.request.POST.decode())
+                kwargs['collection_toggle_form'] = handler.form
+                kwargs['agreed'] = collect_data["agreed"]
+            else:
+                email = bottle.request.POST.decode().get(
+                    "email", bottle.request.GET.decode().get("email", ""))
+                handler = RegistrationCheckHandler({"email": email})
+                kwargs['registration_check_form'] = handler.form
 
         return self.default_template(
             form=self.form, title=self.userfriendly_title,
@@ -251,7 +249,6 @@ class DataCollectPluginPage(ConfigPageMixin, DataCollectPluginConfigHandler):
             **kwargs
         )
 
-    @require_contract_valid(False)
     def _action_check_registration(self):
         handler = RegistrationCheckHandler(bottle.request.POST.decode())
         if not handler.save():
@@ -309,7 +306,6 @@ class DataCollectPluginPage(ConfigPageMixin, DataCollectPluginConfigHandler):
             **kwargs
         )
 
-    @require_contract_valid(False)
     def _action_toggle_collecting(self):
         if bottle.request.method != 'POST':
             messages.error(_("Wrong HTTP method."))
