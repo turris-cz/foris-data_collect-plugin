@@ -5,19 +5,20 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  Foris\n"
+"Project-Id-Version: Foris\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-19 15:48+0200\n"
-"PO-Revision-Date: 2018-06-21 09:44+0000\n"
+"PO-Revision-Date: 2018-11-02 09:24+0000\n"
 "Last-Translator: Krzysztof Kulesza <github@cmza.pl>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/turris/"
+"foris-data_collect-plugin/pl/>\n"
 "Language: pl\n"
-"Language-Team: Polish "
-"<https://hosted.weblate.org/projects/turris/foris/pl/>\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && "
-"(n%100<10 || n%100>=20) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.3-dev\n"
 "Generated-By: Babel 2.6.0\n"
 
 msgid "Emulated services"
@@ -187,28 +188,25 @@ msgstr "Potwierdź e-mail"
 msgid "Save"
 msgstr "Zapisz"
 
-#, fuzzy
 msgid "Data collection status"
-msgstr "Akwizycja danych"
+msgstr "Status akwizycji danych"
 
-#, fuzzy
 msgid "uCollect data"
-msgstr "uCollect"
+msgstr "Dane uCollect"
 
 #, python-format
 msgid "Time of last update: %(datetime)s"
 msgstr "Czas ostatniej aktualizacji: %(datetime)s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "status updated %(seconds)s second ago"
 msgid_plural "status updated %(seconds)s seconds ago"
-msgstr[0] "(status uaktualniony %(seconds)s sekundę temu)"
-msgstr[1] "(status uaktualniony %(seconds)s sekundy temu)"
-msgstr[2] "(status uaktualniony %(seconds)s sekund temu)"
+msgstr[0] "status uaktualniony %(seconds)s sekundę temu"
+msgstr[1] "status uaktualniony %(seconds)s sekundy temu"
+msgstr[2] "status uaktualniony %(seconds)s sekund temu"
 
-#, fuzzy
 msgid "firewall logs"
-msgstr "Wysyłanie logów firewala"
+msgstr "Logi firewala"
 
 msgid "Refresh"
 msgstr "Odśwież"
@@ -218,4 +216,3 @@ msgstr "Odrzuć zmiany"
 
 msgid "Save changes"
 msgstr "Zapisz zmiany"
-
