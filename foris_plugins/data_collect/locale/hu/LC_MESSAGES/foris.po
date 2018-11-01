@@ -5,18 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  Foris\n"
+"Project-Id-Version: Foris\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-19 15:48+0200\n"
-"PO-Revision-Date: 2018-05-30 20:50+0000\n"
+"PO-Revision-Date: 2018-11-02 09:24+0000\n"
 "Last-Translator: Zoli <boritek@gmail.com>\n"
+"Language-Team: Hungarian <https://hosted.weblate.org/projects/turris/"
+"foris-data_collect-plugin/hu/>\n"
 "Language: hu\n"
-"Language-Team: Hungarian "
-"<https://hosted.weblate.org/projects/turris/foris/hu/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.3-dev\n"
 "Generated-By: Babel 2.6.0\n"
 
 msgid "Emulated services"
@@ -189,27 +190,24 @@ msgstr "E-mail ellenőrzése"
 msgid "Save"
 msgstr "Mentés"
 
-#, fuzzy
 msgid "Data collection status"
-msgstr "Adatgyűjtés"
+msgstr "Adatgyűjtés állapota"
 
-#, fuzzy
 msgid "uCollect data"
-msgstr "uCollect"
+msgstr "uCollect adatok"
 
 #, python-format
 msgid "Time of last update: %(datetime)s"
 msgstr "Utolsó frissítés időpontja: %(datetime)s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "status updated %(seconds)s second ago"
 msgid_plural "status updated %(seconds)s seconds ago"
 msgstr[0] "(állapot frissítve %(seconds)s másodperccel ezelőtt)"
 msgstr[1] "(állapot frissítve %(seconds)s másodperccel ezelőtt)"
 
-#, fuzzy
 msgid "firewall logs"
-msgstr "Tűzfal naplók küldése"
+msgstr "tűzfal naplók"
 
 msgid "Refresh"
 msgstr "Frissítés"
@@ -219,4 +217,3 @@ msgstr "Módosítások elvetése"
 
 msgid "Save changes"
 msgstr "Beállítások mentése"
-
