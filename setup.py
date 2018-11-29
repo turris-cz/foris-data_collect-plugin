@@ -26,14 +26,14 @@ setup(
     author_email="stepan.henek@nic.cz",
     url="https://gitlab.labs.nic.cz/turris/foris-data_collect-plugin/",
     license="GPL-3.0",
-    requires=[
-        "foris",
+    install_requires=[
+        "foris @ git+https://gitlab.labs.nic.cz/turris/foris.git#egg=foris",
     ],
     setup_requires=[
         'babel',
         'jinja2',
         'libsass',
-        'foris_plugins_distutils',
+        'foris-plugins-distutils',
     ],
     provides=[
         "foris_plugins.data_collect",
@@ -55,6 +55,9 @@ setup(
             "static/js/contrib/*",
         ],
     },
+    dependency_links=[
+        "git+https://gitlab.labs.nic.cz/turris/foris-plugins-distutils.git#egg=foris-plugins-distutils",
+    ],
     cmdclass={
         "build_py": BuildCmd,  # modify build_py to build the foris files as well
     }
