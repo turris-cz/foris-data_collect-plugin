@@ -55,6 +55,9 @@ setup(
             "static/js/contrib/*",
         ],
     },
+    namespace_packages=[
+        'foris_plugins',
+    ],
     dependency_links=[
         "git+https://gitlab.labs.nic.cz/turris/foris-plugins-distutils.git#egg=foris-plugins-distutils",
     ],
