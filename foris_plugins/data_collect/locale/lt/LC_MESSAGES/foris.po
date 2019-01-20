@@ -5,19 +5,20 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  Foris\n"
+"Project-Id-Version: Foris\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-19 15:48+0200\n"
-"PO-Revision-Date: 2017-06-30 22:33+0000\n"
+"PO-Revision-Date: 2019-01-21 12:21+0000\n"
 "Last-Translator: Fln <weblate.org@fln.lt>\n"
+"Language-Team: Lithuanian <https://hosted.weblate.org/projects/turris/"
+"foris-data_collect-plugin/lt/>\n"
 "Language: lt\n"
-"Language-Team: Lithuanian "
-"<https://hosted.weblate.org/projects/turris/foris/lt/>\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || "
-"n%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || "
+"n%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
+"X-Generator: Weblate 3.4-dev\n"
 "Generated-By: Babel 2.6.0\n"
 
 msgid "Emulated services"
@@ -72,13 +73,11 @@ msgstr "Įjungti duomenų rinkimą"
 msgid "Email"
 msgstr "El. paštas"
 
-#, fuzzy
 msgid "Failed to query the server."
-msgstr "Nepavyko patvirtinti atnaujinimo."
+msgstr "Nepavyko serverio užklausa."
 
-#, fuzzy
 msgid "Failed to verify the router's registration."
-msgstr "Nepavyko patikrinti tinko ryšio."
+msgstr "Nepavyko patikrinti įrenginio registracijos."
 
 msgid "Online"
 msgstr "Ryšys yra"
@@ -96,13 +95,15 @@ msgid ""
 "Failed to update emulated services. Note that you might need to wait till"
 " ucollect is properly installed."
 msgstr ""
+"Nepavyko atnaujinti emuliuojamų servisų. Atkreipkite dėmesį kad gali teikti "
+"palaukti kol ucollect bus tinkamai įdiegtas."
 
 msgid "There were some errors in your input."
 msgstr "Įvestuose duomenyse yra klaidų."
 
-#, fuzzy, python-format
+#, python-format
 msgid "An error ocurred when checking the registration: <br><pre>%(error)s</pre>"
-msgstr "Tikrinant registraciją Įvyko klaida: <br><pre>%(error)s</pre>"
+msgstr "Tikrinant registraciją įvyko klaida: <br><pre>%(error)s</pre>"
 
 msgid ""
 "Registration for the entered email is valid. Now you can enable the data "
@@ -135,11 +136,12 @@ msgstr ""
 
 msgid "Router failed to authorize. Please try to validate our email later."
 msgstr ""
+"Maršrutizatoriui nepavyko autorizacija. Pabandykite patvirtinti mūsų laišką "
+"vėliau."
 
 msgid "Wrong HTTP method."
 msgstr "Klaidingas HTTP metodas."
 
-#, fuzzy
 msgid ""
 "With the Turris router you can join Project Turris which is a non-profit "
 "research project founded by the CZ.NIC association, a .CZ domain "
@@ -152,17 +154,17 @@ msgid ""
 "is distributed to every Turris router and helps them to protect "
 "themselves against the attack."
 msgstr ""
-"Naudodami Turris Omnia maršrutizatorių galite prisijungti prie Turris "
-"Projekto. Tai yra mokslinis, pelno nesiekiantis projektas, įkurtas CZ.NIC"
-" asociacijos, kuri yra .CZ domeno administratoriaus. Prisijungus prie "
-"projekto jūsų maršrutizatorius pradės veikti kaip stebėjimo įrenginys, "
-"analizuojantis duomenų srautą tarp jūsų namų tinklo ir interneto, bei "
-"ieškantis kenkėjiškų duomenų srautų. Maršrutizatorius aptikęs kenkėjišką "
-"duomenų srautą perduoda informaciją į Turris būstine, kur gauti duomenys "
-"yra lyginami su duomenimis gautais iš kitų stebėjimo mazgų bei nustatymas"
-" grėsmės lygis. Jei duomenų srautas atpažįstamas kaip ataka Turris "
-"būstinėje gali būti paruoštas atnaujinimas, padėsiantis apsiginti nuo "
-"šios atakos, kuris išsiunčiamas visiems Turris maršrutizatoriams."
+"Naudodami Turris maršrutizatorių galite prisijungti prie Turris Projekto. "
+"Tai yra mokslinis, pelno nesiekiantis projektas, įkurtas CZ.NIC asociacijos, "
+"kuri yra .CZ domeno administratoriaus. Prisijungus prie projekto jūsų "
+"maršrutizatorius pradės veikti kaip stebėjimo įrenginys, analizuojantis "
+"duomenų srautą tarp jūsų namų tinklo ir interneto, bei ieškantis kenkėjiškų "
+"duomenų srautų. Maršrutizatorius aptikęs kenkėjišką duomenų srautą perduoda "
+"informaciją į Turris būstine, kur gauti duomenys yra lyginami su duomenimis "
+"gautais iš kitų stebėjimo mazgų bei nustatymas grėsmės lygis. Jei duomenų "
+"srautas atpažįstamas kaip ataka Turris būstinėje gali būti paruoštas "
+"atnaujinimas, padėsiantis apsiginti nuo šios atakos, kuris išsiunčiamas "
+"visiems Turris maršrutizatoriams."
 
 msgid ""
 "The Updater is currently disabled. You must enable it first to enable "
@@ -186,29 +188,26 @@ msgstr "Tikrinti el. pašto adresą"
 msgid "Save"
 msgstr "Išsaugoti"
 
-#, fuzzy
 msgid "Data collection status"
-msgstr "Duomenų rinkimas"
+msgstr "Duomenų rinkimo būsena"
 
-#, fuzzy
 msgid "uCollect data"
-msgstr "uCollect"
+msgstr "uCollect duomenys"
 
 #, python-format
 msgid "Time of last update: %(datetime)s"
 msgstr "Paskutinį kartą atnaujinta: %(datetime)s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "status updated %(seconds)s second ago"
 msgid_plural "status updated %(seconds)s seconds ago"
-msgstr[0] "(būsena atnaujinta prieš %(seconds)s sekundę)"
-msgstr[1] "(būsena atnaujinta prieš %(seconds)s sekundes)"
-msgstr[2] "(būsena atnaujinta prieš %(seconds)s sekundžių)"
-msgstr[3] "(būsena atnaujinta prieš %(seconds)s sekundę)"
+msgstr[0] "būsena atnaujinta prieš %(seconds)s sekundę"
+msgstr[1] "būsena atnaujinta prieš %(seconds)s sekundes"
+msgstr[2] "būsena atnaujinta prieš %(seconds)s sekundžių"
+msgstr[3] "būsena atnaujinta prieš %(seconds)s sekundę"
 
-#, fuzzy
 msgid "firewall logs"
-msgstr "Ugniasienės logų siuntimas"
+msgstr "ugniasienės logai"
 
 msgid "Refresh"
 msgstr "Atnaujinti"
@@ -218,4 +217,3 @@ msgstr "Atmesti pakeitimus"
 
 msgid "Save changes"
 msgstr "Išsaugoti pakeitimus"
-
