@@ -20,7 +20,7 @@ class BuildCmd(build_py):
 
 setup(
     name="Foris DataCollect Plugin",
-    version="1.3",
+    version="1.4",
     description="DataCollect plugin for foris web interface",
     author="CZ.NIC, z. s. p. o.",
     author_email="stepan.henek@nic.cz",
