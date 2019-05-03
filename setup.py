@@ -63,5 +63,10 @@ setup(
     ],
     cmdclass={
         "build_py": BuildCmd,  # modify build_py to build the foris files as well
+    },
+    entry_points={
+        "updater_always_on": [
+            "data_collect = foris_plugins.data_collect.entry_points:updater_always_on"
+        ]
     }
 )
